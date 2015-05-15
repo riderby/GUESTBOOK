@@ -1,0 +1,11 @@
+AddDefaultCharset utf-8
+
+RewriteBase /
+
+Options All -indexes
+RewriteEngine On
+RewriteCond $1 !^(/css)
+RewriteRule ^.*page/(.*)$ index.php/?page=$1
+
+
+
